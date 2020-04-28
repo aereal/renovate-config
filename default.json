@@ -23,6 +23,9 @@
   "pin": {
     "automerge": true
   },
+  "patch": {
+    "automerge": true
+  },
   "packageRules": [
     {
       "packagePatterns": [
