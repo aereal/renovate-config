@@ -22,4 +22,5 @@ jobs:
         with:
           path: ~/.npm
           key: ${{ runner.os }}-npm
+      - run: npm ci
       - run: npm run test
