@@ -22,4 +22,4 @@ jobs:
         with:
           path: ~/.npm
           key: ${{ runner.os }}-npm
-      - run: ./test
+      - run: npm run test
