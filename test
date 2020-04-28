@@ -1,5 +1,7 @@
 #!/bin/bash
 
-cp ./default.json ./renovate.json
-npx --package renovate -c renovate-config-validator
-rm renovate.json
+set -e
+
+cp ./default.json ./config.json
+renovate-config-validator
+rm config.json
