@@ -42,6 +42,16 @@
         "^eslint",
         "^@typescript-eslint/"
       ]
+    },
+    {
+      "groupName": "testing", 
+      "packagePatterns": [
+        "^@testing-library/"
+      ],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
     }
   ]
 }
