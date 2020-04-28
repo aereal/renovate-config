@@ -35,13 +35,11 @@
     },
     {
       "groupName": "linters",
-      "extends": [
-        "packages:linters"
-      ],
       "packageNames": [
         "prettier"
       ],
       "packagePatterns": [
+        "^eslint",
         "^@typescript-eslint/"
       ]
     }
