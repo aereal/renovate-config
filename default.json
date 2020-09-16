@@ -55,6 +55,17 @@
       "major": {
         "automerge": false
       }
+    },
+    {
+      "groupName": "aws-cdk",
+      "packagePatterns": [
+        "^@aws-cdk/",
+        "aws-cdk"
+      ],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
     }
   ]
 }
