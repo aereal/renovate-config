@@ -28,6 +28,14 @@
   },
   "packageRules": [
     {
+      "datasources": ["npm"],
+      "labels": ["kind:npm"]
+    },
+    {
+      "datasources": ["go"],
+      "labels": ["kind:go"]
+    },
+    {
       "packagePatterns": [
         "^@types/"
       ],
