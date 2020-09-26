@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/aereal/renovate-config#readme",
   "devDependencies": {
-    "renovate": "^19.219.11"
+    "renovate": "^23.36.4"
   }
 }
