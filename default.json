@@ -74,6 +74,12 @@
       "major": {
         "automerge": false
       }
+    },
+    {
+      "groupName": "aws-sdk",
+      "packagePatterns": [
+        "^github.com/aws/aws-sdk-go-v2"
+      ]
     }
   ]
 }
