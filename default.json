@@ -28,16 +28,16 @@
   },
   "packageRules": [
     {
-      "datasources": ["npm"],
+      "matchDatasources": ["npm"],
       "labels": ["kind:npm"]
     },
     {
-      "datasources": ["go"],
+      "matchDatasources": ["go"],
       "labels": ["kind:go"]
     },
     {
-      "packagePatterns": [
-        "^@types/"
+      "matchPackageNames": [
+        "@types/**"
       ],
       "automerge": true,
       "major": {
@@ -49,16 +49,16 @@
       "packageNames": [
         "prettier"
       ],
-      "packagePatterns": [
-        "^eslint",
-        "^@typescript-eslint/",
-        "^@eslint/"
+      "matchPackageNames": [
+        "prettier",
+        "/^@?eslint/",
+        "@typescript-eslint/**"
       ]
     },
     {
       "groupName": "testing-library",
-      "packagePatterns": [
-        "^@testing-library/"
+      "matchPackageNames": [
+        "@testing-library/**"
       ],
       "automerge": true,
       "major": {
@@ -67,9 +67,9 @@
     },
     {
       "groupName": "aws-cdk",
-      "packagePatterns": [
-        "^@aws-cdk/",
-        "aws-cdk"
+      "matchPackageNames": [
+        "aws-cdk",
+        "@aws-cdk/**"
       ],
       "automerge": true,
       "major": {
@@ -78,8 +78,8 @@
     },
     {
       "groupName": "aws-sdk",
-      "packagePatterns": [
-        "^github.com/aws/aws-sdk-go-v2"
+      "matchPackageNames": [
+        "/^github.com/aws/aws-sdk-go-v2/"
       ]
     }
   ]
