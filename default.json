@@ -51,7 +51,8 @@
       ],
       "packagePatterns": [
         "^eslint",
-        "^@typescript-eslint/"
+        "^@typescript-eslint/",
+        "^@eslint/"
       ]
     },
     {
