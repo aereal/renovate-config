@@ -6,8 +6,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: '0 10 * * *'
 jobs:
   test:
     runs-on: ubuntu-latest
