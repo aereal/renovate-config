@@ -45,7 +45,7 @@
       }
     },
     {
-      "groupName": "linters",
+      "groupName": "ESLint",
       "packageNames": [
         "prettier"
       ],
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "groupName": "testing", 
+      "groupName": "testing-library",
       "packagePatterns": [
         "^@testing-library/"
       ],
