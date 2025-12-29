@@ -81,6 +81,13 @@
       "matchPackageNames": [
         "/^github.com/aws/aws-sdk-go-v2/"
       ]
+    },
+    {
+      "groupName": "OpenTelemetry SDK",
+      "matchDatasources": ["go"],
+      "matchPackageNames": [
+        "/^go[.]opentelemetry[.]io/"
+      ]
     }
   ]
 }
