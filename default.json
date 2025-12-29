@@ -28,16 +28,16 @@
   },
   "packageRules": [
     {
-      "datasources": ["npm"],
+      "matchDatasources": ["npm"],
       "labels": ["kind:npm"]
     },
     {
-      "datasources": ["go"],
+      "matchDatasources": ["go"],
       "labels": ["kind:go"]
     },
     {
-      "packagePatterns": [
-        "^@types/"
+      "matchPackageNames": [
+        "@types/**"
       ],
       "automerge": true,
       "major": {
@@ -45,19 +45,20 @@
       }
     },
     {
-      "groupName": "linters",
+      "groupName": "ESLint",
       "packageNames": [
         "prettier"
       ],
-      "packagePatterns": [
-        "^eslint",
-        "^@typescript-eslint/"
+      "matchPackageNames": [
+        "prettier",
+        "/^@?eslint/",
+        "@typescript-eslint/**"
       ]
     },
     {
-      "groupName": "testing", 
-      "packagePatterns": [
-        "^@testing-library/"
+      "groupName": "testing-library",
+      "matchPackageNames": [
+        "@testing-library/**"
       ],
       "automerge": true,
       "major": {
@@ -66,9 +67,9 @@
     },
     {
       "groupName": "aws-cdk",
-      "packagePatterns": [
-        "^@aws-cdk/",
-        "aws-cdk"
+      "matchPackageNames": [
+        "aws-cdk",
+        "@aws-cdk/**"
       ],
       "automerge": true,
       "major": {
@@ -77,8 +78,15 @@
     },
     {
       "groupName": "aws-sdk",
-      "packagePatterns": [
-        "^github.com/aws/aws-sdk-go-v2"
+      "matchPackageNames": [
+        "/^github.com/aws/aws-sdk-go-v2/"
+      ]
+    },
+    {
+      "groupName": "OpenTelemetry SDK",
+      "matchDatasources": ["go"],
+      "matchPackageNames": [
+        "/^go[.]opentelemetry[.]io/"
       ]
     }
   ]
